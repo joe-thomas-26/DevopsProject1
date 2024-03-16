@@ -19,17 +19,21 @@ The project establishes a continuous integration and delivery (CI/CD) pipeline u
 - Launch instances for Jenkins, SonarQube and Docker
 - Configure security groups and keys. make sure to open the required ports.
 - SSH into instances for setup
+
 **Step 2: Installing and Configuring Jenkins:**
 - Update system and install Java environment(dependency for jenkins)
 - Install Jenkins and required plugins, also allow port 8080
 - Create and configure Jenkins project.
+
 **Step 3: SonarQube Integration and Code Analysis:**
 - Install SonarQube on EC2 instance.
 - Integrate SonarQube with Jenkins.
 - Analyze code and check for pass status.
+
 **Step 4: Docker Setup and Deployment:**
 - Install Docker on EC2 instance
 - Integrate docker server with jenkins server.
 - Automatically build Docker image using Dockerfile and run container.
 - Make sure to check the connectivity between jenkins and ubuntu server is passwordless. Use ssh keys to configure the same.
 - Deploy website and verify functionality.
+
